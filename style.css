@@ -1,0 +1,68 @@
+/* CSS Template */
+
+/* Base page settings */
+ body {
+ box-sizing: border-box;
+  background-color: black;
+  color: red;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding: 10px auto 10px auto;
+  border: 2px red;
+  margin: 0px auto 10px auto;
+  line-height: 1;
+  background-image: radial-gradient(red,
+                                crimson,  black);  /* Gradient */
+}
+
+    h1 {
+  background-color: red;
+  color: black;
+  margin: 0px auto 10px auto; 
+  padding: 10px auto 10px auto;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: bold;
+  line-height: 1.2em; 
+  background-image: radial-gradient(red,
+                                crimson,  black);
+{
+h2 {
+  background-color: red;
+  font-size: 5em;
+  text-align: center; 
+  font-weight: 800;
+  color: black;
+  padding: 25px 10px 25px 10px;  /* added            10px padding to sides looks much better  */
+  background-image: radial-gradient(red,
+                                crimson,  black);
+}
+
+h3 {
+  background-color: red;
+  font-size: 4.0em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 10px auto 0px auto;
+  padding: 10px auto 10px auto;
+  background-image: radial-gradient(red,
+                               crimson,  black);
+  {
+
+footer { 
+  background-color: red;
+  color: black;
+  margin: 10px auto 0px auto;
+  padding: 10px auto 10px auto;
+  text-align: center;
+  font-size: 4.0em;
+  background-image: radial-gradient(red,
+                                crimson,  black);
+}
