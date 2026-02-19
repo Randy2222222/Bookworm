@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Bookworm</title>
   <style>
-   * {box-sizing: border-box}
     html, body {
+      box-sizing: border-box;
       background-color: black;
       color: red;
       margin: 0;
@@ -194,6 +194,7 @@ span.psw {
     display: block;
     float: none;
   }
+
   .cancelbtn {
     width: 100%;
   }
@@ -213,7 +214,7 @@ span.psw {
        <h1>📚 Bookworm 📚</h1>
 
       <!-- Button to open the modal -->
-      
+   <section> 
 <span>
 <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button></span>
 <!-- The Modal (contains the Sign Up form) -->
@@ -245,9 +246,10 @@ span.psw {
       </div>
     </div>
   </form>
-</div></main>
+</div>
+   </section>
        <!-- add sign in form 🔥 original modal script goes here -->
-       <form>
+ <section>    
 <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id02').style.display='block'">Login</button>
 
@@ -285,7 +287,8 @@ class="close" title="Close Modal">&times;</span>-->
     </div>
   </form>
 </div>
-       
+ </section>
+       </main>
        <script>
 // Get the modal
 var modal = document.getElementById('id01');
