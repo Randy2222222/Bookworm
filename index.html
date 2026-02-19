@@ -179,7 +179,7 @@ hr {
   text-align: center;
   margin: 24px 0 12px 0;
   border: 3px solid red;
-  width: 80%;
+  width: 100%;
 }
 
 /* Avatar image */
@@ -270,11 +270,13 @@ class="close" title="Close Modal">&times;</span>-->
 
   <!-- Modal Content -->
   <form class="modal-content">
-    <div class="imgcontainer">
-      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar">
+    <div class="container"> <!-- imgcontainer -->
+      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="center" style="width: 40%;
+  border-radius: 50%;
+  border: 3px solid red;"> <!-- class="avatar"
     
 
-    <div class="container">
+   <!-- <div class="container">-->
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -290,7 +292,6 @@ class="close" title="Close Modal">&times;</span>-->
    <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" style="margin-top: 35px;" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#" style="color: red;">password?</a></span>
-    </div>
     </div>
   </form>
 </div>
