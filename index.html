@@ -163,32 +163,22 @@ hr {
   width: 35px;
   height: 5px;
   background-color: red;
-  margin: 6px 0;
-  transition: 0.3s;
+  margin-top: 6px;
+  margin-right: 0px;
+  
 }
 
-/* X animation */
-.barcontainer.open .bar1 {
-  transform: rotate(45deg) translate(6px, 6px);
-}
 
-.barcontainer.open .bar2 {
-  opacity: 0;
-}
-
-.barcontainer.open .bar3 {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
 
 /* Sidebar */
 .sidebar {
   position: fixed;
-  top: 0;
-  left: -80px; /* -250 */
+  margin-top: 0px
+  margin-left: -80px; /* -250 */
   width: 80px; /* 250px */
   height: 100%;
   background: #222;
-  padding: 10px 10px; /* 60px 20px */
+  padding: 10px 0px; /* 60px 20px */
   transition: 0.3s;
 }
 
@@ -258,7 +248,7 @@ span.psw {
      <body>
   
        
-       <main><div class="barcontainer" onclick="toggleMenu(this)">
+       <main><div class="barcontainer" onclick="toggleSidebar()">
          <div class="bar1"></div>
          <div class="bar2"></div>
          <div class="bar3"></div>
@@ -372,11 +362,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-</script>
-   
+</script>     
 <script>
-function toggleMenu(menu) {
-  menu.classList.toggle("open");
+function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("active");
 }
 </script>
