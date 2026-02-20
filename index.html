@@ -144,13 +144,57 @@ hr {
       margin: 20px auto 15px auto;
       border: 3px solid white;
     }
-    .barcontainer,.bar1,.bar2,.bar3 {
+   /* .barcontainer,.bar1,.bar2,.bar3 {
       width: 35px;
       height: 5px;
       background-color: red;
       margin-top: 6px;
       margin-right: 0px;
-    }
+    }/*
+    
+/* Container */
+.barcontainer {
+  cursor: pointer;
+  width: 35px;
+}
+
+/* Bars */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* X animation */
+.barcontainer.open .bar1 {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.barcontainer.open .bar2 {
+  opacity: 0;
+}
+
+.barcontainer.open .bar3 {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  padding: 60px 20px;
+  transition: 0.3s;
+}
+
+.sidebar.active {
+  left: 0;
+}
       
         h2 {
           background-color: ghostwhite;
@@ -214,11 +258,16 @@ span.psw {
      <body>
   
        
-       <main><div class="barcontainer" onclick="function sidebar()">
+       <main><div class="barcontainer" onclick="toggleMenu(this)">
          <div class="bar1"></div>
          <div class="bar2"></div>
          <div class="bar3"></div>
          </div>
+         <nav id="sidebar" class="sidebar">
+  <a href="index.html" target="_self">Home</a>
+  <a href="account.html" target="_self">Account</a>
+  <a mailto="randyjpollitt@yahoo.com">Contact</a>
+</nav>
          
        
        <img src="pic/IMG_0291.jpeg" alt="pic" class="center" style="width: 200px; height: 200px; margin: 110px auto 10px auto;
@@ -324,8 +373,12 @@ window.onclick = function(event) {
   }
 }
 </script>
-   <script>function sidebar() {
-  <div class="sidebar"><ul><a href="index.html" target="_self"><p>Home</p></a></ul></div> }
+   
+<script>
+function toggleMenu(menu) {
+  menu.classList.toggle("open");
+  document.getElementById("sidebar").classList.toggle("active");
+}
 </script>
   
 
