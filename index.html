@@ -177,34 +177,35 @@ hr {
 
 /* Sidebar */
 .sidebar {
+  display: block;
   position: fixed;
   margin-top: 0px;
   margin-left: -80px; /* -250 */
   width: 80px; /* 250px */
   height: 50%;
   background: #222;
- /* text-align: center;
-  font-size: 1em;
-  line-height: .8em; 
-  color: red;
-  padding: 5px auto auto auto; 60px 20px */
-  transition: 0.3s;
-}
-
-.sidebar.active {
-  margin-left: 0px;
-}
-    menu {
-  display: block;
+  text-align: left;
+ /* font-size: 1em;
+  line-height: 1em; */
   list-style-type: none;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 10px;
+/*  padding: 5px auto auto auto;  60px 20px */
+  transition: 0.3s;
 }
+
+.sidebar.active {
+  margin-left: 0px;
+}
+    
     a {
       color: red;
+      list-style-type: none;
+      font-size: 1em;
+      line-height: 1em;
     }
       
         h2 {
