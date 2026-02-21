@@ -75,9 +75,36 @@
       color: ghostwhite;
       text-decoration: none;
     }
+   /* container for profile */
+  .profilecontainer {
+    width: 100%;
+    height: 280px;
+    text-align: right;
+    font-size: 1em;
+    color: ghostwhite;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+  
+  /* Avatar image */
+.avatar {
+  width: 30%;
+  border-radius: 50%;
+  border: 3px solid red;
+  margin-top: -15px;
+  margin-right: 175px;
+}
+ /*  centered image used class="center" inline after alt="pic" (no div) */
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 </head>
      <body>
+          <div class="profilecontainer">
           <div class="barcontainer" onclick="toggleSidebar()">
          <div class="bar1"></div>
          <div class="bar2"></div>
@@ -95,9 +122,8 @@
   <a href="my_photos.html" target="_self"> My Photo's</a>
   <a href="main.html" target="_self"> Main</a>
          </nav>
-  
-          <h1></h1>
-    <h2></h2>
+          </div>
+        
   
     
     
