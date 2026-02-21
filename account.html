@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="icon.png">  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title></title>
+
+<style>
+    html, body {
+      box-sizing: border-box;
+      background-color: black;
+      color: red;
+      margin: 0;
+      padding: 0;
+      font-family: Comic Sans MS, sans-serif;
+    }
+
+/* headers */
+    h1 {
+      background-color: black;
+      color: red;
+      font-size: 2em;
+      text-align: center;
+      text-shadow: 3px 3px 3px lime;
+      padding: 10px auto 10px auto;
+      margin: 20px auto 15px auto;
+      border: 3px solid white;
+    }
+    
+    /* paragraph */
+    p{ 
+    background-color: ghostwhite;
+    color: red;
+    }
+   
+/* barcontainer */
+.barcontainer {
+  cursor: pointer;
+  width: 35px;
+}
+
+ /* Bars */
+.bar1,.bar2,.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  margin-top: 6px;
+  margin-left: 0px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  margin-top: 5px;
+  margin-left: -80px; /* -250 */
+  width: 80px; /* 250px */
+  height: 42%;
+  background: #222;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em; 
+  padding: 10px auto auto auto;  /* 60px 20px */
+  transition: 0.3s;
+}
+
+.sidebar.active {
+  margin-left: 0px;
+}
+    /* page links */
+    a {
+      color: ghostwhite;
+      text-decoration: none;
+    }
+</script>
+</head>
+     <body>
+          <div class="barcontainer" onclick="toggleSidebar()">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         </div>
+         <nav id="sidebar" class="sidebar">
+  <a href="index.html" target="_self"> Home</a>
+  <a href="about.html" target="_self"> About</a>
+  <a href=mailto:randyjpollitt@yahoo.com target="_email"> Contact</a>
+  <span><hr style="border: 1px solid red; width: 75px; margin: 5px 0px 5px auto;"></span>
+  <a href="account.html" target="_self"> Account</a>
+  <a href="profile.html" target="_self"> Profile</a>
+  <a href="mail.html" target="_self"> Book Mail</a>
+  <a href="my_page.html" target="_self"> My Page</a>
+  <a href="my_photos.html" target="_self"> My Photo's</a>
+  <a href="main.html" target="_self"> Main</a>
+         </nav>
+  
+          <h1></h1>
+    <h2></h2>
+  
+    
+    
+    <main></main>
+   
+  
+
+<!-- toggle sidebar function -->   
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+
+  <footer></footer>
+</body>
+</html>
