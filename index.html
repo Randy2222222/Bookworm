@@ -312,8 +312,6 @@ class="close" title="Close Modal">&times;</span>
   border: 3px solid red;
   margin: 15px auto 25px auto;">
     
-
-   <!-- <div class="container">-->
       <label for="uname" style="text-algin: center;"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -325,7 +323,8 @@ class="close" title="Close Modal">&times;</span>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-
+    
+    <!-- div container -->
    <div class="container" style="background-color:#f1f1f1; margin-bottom: 80px;">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" style="margin-top: 35px;" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#" style="color: red;">password?</a></span>
@@ -333,29 +332,27 @@ class="close" title="Close Modal">&times;</span>
   </form>
 </div></main>
  
+       <!--
        
-       <script>
 // Get the modal
-var modal = document.getElementById('id01');
+//var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-         <script>
+//window.onclick = function(event) {
+  //  if (event.target == modal) {
+   //     modal.style.display = "none";
+  //  }
+//} end script tag and new script tag go next
+
 // Get the modal
-var modal = document.getElementById('id02');
+//var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>     
+//window.onclick = function(event) {
+//  if (event.target == modal) {
+ //   modal.style.display = "none";
+//  }
+//} end script tag -->
 <script>
 function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("active");
