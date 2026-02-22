@@ -145,6 +145,8 @@ color: ghostwhite;
   <a href="my_photos.html" target="_self"> My Photo's</a>
   <a href="main.html" target="_self"> Main</a>
          </nav>
+     <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar">
+       </div>
        <!-- bio info-->
         <div class="form-container"> 
      <div class="form">
@@ -155,8 +157,8 @@ color: ghostwhite;
 <!--  action="https://formspree.io/f/xlgwbbvl"
   method="POST"
   enctype="multipart/form-data">-->
-  <input type="text" id="username" placeholder="username" required>
-  <input type="text" id="bio" placeholder="bio" optional>
+  <input type="text" id="upUsername" placeholder="Username" required>
+  <input type="text" id="Bio" placeholder="Bio" optional>
   <input type="text" id="Reading Style" placeholder="Reading Style" optional>
   <input type="text" id="Career" placeholder="Career" optional>
   <input type="text" id="Age" placeholder="Age" optional>
@@ -166,10 +168,15 @@ color: ghostwhite;
          id="img"
          accept="image/*"
          style="" optional> <!-- added id="img" changed name from image to upload -->
-  <button type="submit" style="background-color: black; color: white; display: block; margin: 5px auto 0px auto;  border: 2px solid white; padding: 5px 8px 5px 8px; font-size: 1.0em; border-radius: 5px;">Upload Image</button>
+  <button type="submit" style="background-color: black; color: white; display: block; margin: 5px auto 0px auto; 
+    border: 1px solid white; padding: 2px; font-size: 1.0em; border-radius: 5px;">Upload Image</button>
 
       <!-- <input type="file" id="img" name="image" accept="image/*"> -->
-<img id="preview" style="max-width:200px; display: none; margin: 80px auto 0px auto;"> <!-- change display: none; -->
+<img id="preview" style=" width: 30%;
+  border-radius: 50%;
+  border: 3px solid red;
+  margin-top: -15px;
+  margin-right: 175px;"><!-- change display: none; -->
 </form>   </div></div>
        <script>
 document.getElementById('img').addEventListener('change', e => {
