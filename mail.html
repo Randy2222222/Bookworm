@@ -7,6 +7,12 @@
   <link rel="apple-touch-icon" href="icon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script>  import React from "react";
+import ReactDOM from "react-dom";
+import BookMailApp from "./BookMailApp";
+
+ReactDOM.render(<BookMailApp currentUser="user_123" />, document.getElementById("root"));
+</script>
 <title></title>
 
 <style>
@@ -137,7 +143,7 @@ function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("active");
 }
 </script>
-<script>js/BookMailApp.js</script>
+
 
   <footer></footer>
 </body>
