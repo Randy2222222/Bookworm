@@ -113,78 +113,7 @@
   
     
     
-    <main>     
-<span class="bg-blue-700 flex items-center justify-center min-h-screen">
-
-<!-- First Layer -->
- <div class="w-[20rem] sm:max-w-[22rem] [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
-
-<!-- Second Layer -->
-  <div>
-                <!-- Main Container -->        
-    <div class="bg-blue-900 py-6 px-3">
-                <!-- Header -->
-     <div class="flex w-full relative items-center justify-center text-slate-100 mb-3">
-        <div class="text-3xl absolute left-0 hover:text-4xl cursor-pointer ">
-    <iconify-icon icon="material-symbols:chevron-left-rounded"></iconify-icon>
-         </div>
-      <h2 class="text-center">Find Friends</h2>
-      </div>
-                <!-- Search Bar -->
-  <div class="flex items-center bg-blue-200/70 rounded-full text-slate-200 px-2 py-1 gap-1">
-     <div class="text-2xl pt-1">
-      <iconify-icon icon="material-symbols:search-rounded"></iconify-icon>
-      </div>
-   <input type="text" name="search" id="search" placeholder="Enter a friend's name" class="focus:rings-0 border-0 focus:border-0 focus:outline-none text-sm bg-transparent placeholder:text-slate-100 pl-1">
-       </div>
-  </div>
-                <!-- Profile Container -->
-<div id="root" class="py-4 px-2 bg-blue-50"></div>
-        </div>
-    </div>
-
-<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
-<script src="main.js"></script>
-</span>
-      
-<div class="flex items-center  gap-2">
-  <div class="w-14 h-14 rounded-full p-1 hover:scale-105 bg-blue-200/80 overflow-hidden">
-
-    <img src= {profileImage} alt="" class="rounded-full w-full">
-   </div>
-
-   <div class="font-semibold text-blue-600 mr-auto">
-      <h2>{userName}</h2>
-    </div>
-
-
-<button class="px-4 py-2 bg-blue-700 text-slate-100 rounded-full text-sm font-semibold hover:bg-white border border-blue-700 hover:text-blue-700 shadow-md shadow-blue-700">follow</button>
-
-</div>
-
-<img src=${friend.profileImage} alt="" class="rounded-full w-full">
-            </div>
-            <div class="font-semibold text-blue-600 mr-auto"><h2>${friend.userName}</h2></div>
-            <button class="btn follow_friend px-4 py-2 bg-blue-700 text-slate-100 rounded-full text-sm font-semibold hover:bg-white border border-blue-700 hover:text-blue-700 shadow-md shadow-blue-700">follow</button>
-        </div>
-<script>    `)
-
-}).join('')
-
-// Making Follow/unfollow button funtional
-
-window.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn")) {
-        e.target.classList.contains("follow_friend")
-            ? (e.target.textContent = "unfollow")
-            : (e.target.textContent = "follow");
-
-
-        e.target.classList.toggle("follow_friend");
-    }
-
-
-}); </script>
+    
 
 
      </main>
