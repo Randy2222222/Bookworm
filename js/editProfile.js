@@ -1,24 +1,24 @@
 
 document.getElementById('editBtn').addEventListener('click', function() {
-    document.getElementById('Username').disabled = false;
-    document.getElementById('Age').disabled = false;
-    document.getElementById('Career').disabled = false;
-    document.getElementById('Hobbies').disabled = false;
-    document.getElementById('Reading Style').disabled = false;
-    document.getElementById('Bio').disabled= false;
-    document.getElementById('Web Address').disabled = false;
+    document.getElementById('username').disabled = false;
+    document.getElementById('age').disabled = false;
+    document.getElementById('career').disabled = false;
+    document.getElementById('hobbies').disabled = false;
+    document.getElementById('readingstyle').disabled = false;
+    document.getElementById('bio').disabled= false;
+    document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
     document.getElementById('saveBtn').style.display = 'inline';
 });
 
 document.getElementById('saveBtn').addEventListener('click', function() {
-    document.getElementById('Username').disabled = true;
-    document.getElementById('Age').disabled = true;
-    document.getElementById('Career').disabled = true;
-    document.getElementById('Hobbies').disabled = true;
-    document.getElementById('Reading Style').disabled = true;
-    document.getElementById('Bio').disabled = true;
-    document.getElementById('Web Address').disabled = true;
+    document.getElementById('username').disabled = true;
+    document.getElementById('age').disabled = true;
+    document.getElementById('career').disabled = true;
+    document.getElementById('hobbies').disabled = true;
+    document.getElementById('readingstyle').disabled = true;
+    document.getElementById('bio').disabled = true;
+    document.getElementById('webaddress').disabled = true;
     this.style.display = 'none';
     document.getElementById('editBtn').style.display = 'inline';
 });
