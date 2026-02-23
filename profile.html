@@ -140,6 +140,28 @@ color: ghostwhite;
   text-align: center;
   margin: 10px auto 12px auto;
 }
+  CSS
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-info {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 </style>
 </head>
      <body>
@@ -163,8 +185,11 @@ color: ghostwhite;
   <a href="main.html" target="_self"> Main</a>
          </nav>
    <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar">
-
-     
+              </div>
+       
+     <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="profile-info">
   <input type="text" id="username" placeholder="Username" value="John Doe" disabled>
   <input type="text" id="Age" placeholder="Age" value="Age" disabled>         
   <input type="text" id="Career" placeholder="Career" value="Career" disabled>
@@ -192,7 +217,7 @@ color: ghostwhite;
   margin-right: 175px;"><!-- change display: none; -->
             <button id="editBtn">Edit</button>
             <button id="saveBtn" style="display:none;">Save</button>
-        </div>
+        </div></div>
   
     
     
