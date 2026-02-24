@@ -20,5 +20,6 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     document.getElementById('bio').disabled = true;
     document.getElementById('webaddress').disabled = true;
     this.style.display = 'none';
+    document.body.style.color = 'white';
     document.getElementById('editBtn').style.display = 'inline';
 });
