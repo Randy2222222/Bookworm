@@ -8,6 +8,7 @@ document.getElementById('editBtn').addEventListener('click', function() {
     document.getElementById('bio').disabled= false;
     document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
+    document.body.style.color = 'white';
     document.getElementById('saveBtn').style.display = 'inline';
 });
 
