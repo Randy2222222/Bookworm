@@ -8,7 +8,7 @@ document.getElementById('editBtn').addEventListener('click', function() {
     document.getElementById('bio').disabled= false;
     document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
-    document.body.style.color = 'white';
+    document.body.style.color = '#FFFFFF';
     document.getElementById('saveBtn').style.display = 'inline';
 });
 
@@ -21,6 +21,6 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     document.getElementById('bio').disabled = true;
     document.getElementById('webaddress').disabled = true;
     this.style.display = 'none';
-    document.body.style.color = 'white';
+    document.body.style.color = '#FFFFFF';
     document.getElementById('editBtn').style.display = 'inline';
 });
