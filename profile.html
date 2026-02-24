@@ -136,13 +136,11 @@ color: ghostwhite;
 }
 
 .profile-container {
-    width: 300px;
-    margin: auto;
-    background-color: black;
-    color: ghostwhite;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  height: 140px;
+  position: absolute;
+  left: 57%;
+  margin-left: -3px;
+  top: 0;
 }
 
 .profile-info {
@@ -183,10 +181,10 @@ input {
   <a href="main.html" target="_self"> Main</a>
          </nav>
    <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar">
-              <!-- removed div -->
+               </div>     <!-- removed div -->
        
  <!--    <div class="profile-container"> -->
-      
+        <div class="profile-container">
         <div class="profile-info">
   <input type="text" id="username" value="John Doe" disabled>
   <input type="text" id="age" value="Age" disabled>         
@@ -195,8 +193,8 @@ input {
   <input type="text" id="readingstyle" value="Reading Style" disabled>
   <input type="text" id="bio" value="Bio" disabled>
   <input type="text" id="webaddress" value="http://yahoo.com" disabled>
-<button id="editBtn">Edit</button>
-            <button id="saveBtn" style="display:none;">Save</button>
+  <button id="editBtn">Edit</button>
+  <button id="saveBtn" style="display:none;">Save</button>
         </div></div>
           
 
