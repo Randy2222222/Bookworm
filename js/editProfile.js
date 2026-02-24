@@ -17,7 +17,7 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     document.getElementById('career').style.display.color = '#FFFFFF'.disabled = true;
     document.getElementById('hobbies').style.display.color = '#FFFFFF'.disabled = true;
     document.getElementById('readingstyle').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('bio').style.display.color = '#FFFFFF'.rows.40.cols.30.disabled = true;
+    document.getElementById('bio').style.display.color = '#FFFFFF'.disabled = true;
     document.getElementById('webaddress').style.display.color = '#FFFFFF'.disabled = true;
     this.style.display = 'none';
     document.getElementById('editBtn').style.display = 'inline';
