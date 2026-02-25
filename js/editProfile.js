@@ -12,13 +12,20 @@ document.getElementById('editBtn').addEventListener('click', function() {
 });
 
 document.getElementById('saveBtn').addEventListener('click', function() {
-    document.getElementById('username').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('age').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('career').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('hobbies').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('readingstyle').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('bio').style.display.color = '#FFFFFF'.disabled = true;
-    document.getElementById('webaddress').style.display.color = '#FFFFFF'.disabled = true;
+    document.getElementById('username').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('age').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('career').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('hobbies').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('readingstyle').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('bio').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
+    document.getElementById('webaddress').disabled = true;
+    document.getElementById('bio').style.color = '#FFFFFF';
     this.style.display = 'none';
     document.getElementById('editBtn').style.display = 'inline';
 });
