@@ -1,7 +1,6 @@
 
 document.getElementById('editBtn').addEventListener('click', function() {
-    document.getElementById('username').style.color = '#FFFFFF'.disabled = false;
-    document.getElementById('username').style.color = '#FFFFFF';
+    document.getElementById('username').disabled = false;
     document.getElementById('age').disabled = false;
     document.getElementById('age').style.color = '#FFFFFF';
     document.getElementById('career').disabled = false;
