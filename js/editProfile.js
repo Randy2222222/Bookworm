@@ -1,8 +1,9 @@
 
 document.getElementById('editBtn').addEventListener('click', function() {
     document.getElementById('username').disabled = false;
+    document.getElementById('username').style.color = '#FFFFFF';
     document.getElementById('age').disabled = false;
-    document.getElementById('age').display.style.color = '#FFFFFF';
+    document.getElementById('age').style.color = '#FFFFFF';
     document.getElementById('career').disabled = false;
     document.getElementById('hobbies').disabled = false;
     document.getElementById('readingstyle').disabled = false;
@@ -16,7 +17,7 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     document.getElementById('username').disabled = true;
     document.getElementById('username').style.color = '#FFFFFF';
     document.getElementById('age').disabled = true;
-    document.getElementById('age').display.style.color = '#FFFFFF';
+    document.getElementById('age').style.color = '#FFFFFF';
     document.getElementById('career').disabled = true;
     document.getElementById('career').style.color = '#FFFFFF';
     document.getElementById('hobbies').disabled = true;
