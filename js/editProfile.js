@@ -1,12 +1,12 @@
 
 document.getElementById('editBtn').addEventListener('click', function() {
-    document.getElementById('username').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('age').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('career').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('hobbies').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('readingstyle').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('bio').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('webaddress').style.color = '#FFFFFF'.disabled = true;
+    document.getElementById('username').disabled = false;
+    document.getElementById('age').disabled = false;
+    document.getElementById('career').disabled = false;
+    document.getElementById('hobbies').disabled = false;
+    document.getElementById('readingstyle').disabled = false;
+    document.getElementById('bio').disabled = false;
+    document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
     document.getElementById('saveBtn').style.display = 'inline';
 });
