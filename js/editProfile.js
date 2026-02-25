@@ -1,24 +1,24 @@
 
 document.getElementById('editBtn').addEventListener('click', function() {
-    document.getElementById('username').disabled = false;
-    document.getElementById('age').disabled = false;
-    document.getElementById('career').disabled = false;
-    document.getElementById('hobbies').disabled = false;
-    document.getElementById('readingstyle').disabled = false;
-    document.getElementById('bio').disabled = false;
-    document.getElementById('webaddress').disabled = false;
+    document.getElementById('username').readOnly = false;
+    document.getElementById('age').readOnly = false;
+    document.getElementById('career').readOnly = false;
+    document.getElementById('hobbies').readOnly = false;
+    document.getElementById('readingstyle').readInly = false;
+    document.getElementById('bio').readOnly = false;
+    document.getElementById('webaddress').readOnly = false;
     this.style.display = 'none';
     document.getElementById('saveBtn').style.display = 'inline';
 });
 
 document.getElementById('saveBtn').addEventListener('click', function() {
-    document.getElementById('username').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('age').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('career').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('hobbies').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('readingstyle').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('bio').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('webaddress').disabled = true;
+    document.getElementById('username').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('age').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('career').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('hobbies').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('readingstyle').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('bio').style.color = '#FFFFFF'.readOnly = true;
+    document.getElementById('webaddress').readOnly = true;
     this.style.display = 'none';
     document.getElementById('editBtn').style.display = 'inline';
 });
