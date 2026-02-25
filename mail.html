@@ -87,6 +87,14 @@
     line-height: 1.5em;
   }
   
+  /*  centered image used class="center" inline after alt="pic" (no div) */
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+  
   /* Avatar image */
 .avatar {
   width: 30%;
@@ -95,12 +103,52 @@
   margin-top: -15px;
   margin-right: 175px;
 }
- /*  centered image used class="center" inline after alt="pic" (no div) */
-    .center {
+  .vl {
+  border-left: 1px solid black;
+  height: 120px;
+  position: absolute;
+  left: 57%;
+  margin-left: -3px;
+  top: 0;
+}
+ p{
+margin-left: 50%;
+text-align: left;
+font-size: 1em;
+color: ghostwhite; 
+}
+  /* Center the avatar image inside this container */
+.imgcontainer {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: center;
+  margin: 10px auto 12px auto;
+}
+
+.profile-container {
+  height: 120px;
+  position: absolute;
+  width: 40%;
+  left: 57%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.profile-info {
+    font-size: 0.8em;
+    align: left;
+    width: 140px;
+    margin-top: 5px; 
+    padding: 5px;
+    background-color: black;
+    color: ghostwhite;
+}
+
+input {
+    font-size: 0.8em
+    width: 42%;
+    margin-top: 5px; 
+    background-color: black; 
+    color: ghostwhite;
 }
 </style>
 </head>
