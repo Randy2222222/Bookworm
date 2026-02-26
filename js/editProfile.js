@@ -11,7 +11,7 @@
     document.getElementById('bio').disabled = false;
     document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
-    document.getElementById('saveBtn').style.display = 'inline';
+  //  document.getElementById('saveBtn').style.display = 'inline';
 //}); 
 })();
 
