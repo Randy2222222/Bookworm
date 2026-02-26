@@ -1,8 +1,7 @@
 
-//document.getElementById('editBtn')
+//document.getElementById('editBtn').addEventListener('click', function() {
 (function() {
     // Code to run immediately-got rid of button temporarly-commented out code
-  //.addEventListener('click', function() {
     document.getElementById('username').disabled = false;
     document.getElementById('age').disabled = false;
     document.getElementById('career').disabled = false;
