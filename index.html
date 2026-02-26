@@ -266,7 +266,9 @@ span.psw {
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content">
+  <form class="modal-content" action="submit.php"
+  method="POST"
+  enctype="multipart/form-data">
     <div class="container">
       <div class="imgcontainer"> <!-- imgcontainer  add-->
       <img src="pic/IMG_0243.jpeg" alt="Avatar" class="center" style="width: 40%;
@@ -310,14 +312,14 @@ span.psw {
     
 <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id02').style.display='block'"style="background-color: lime; font-size: 1.5em; padding: 10px; font-weight: 500;">Login</button>
-
+b
 <!-- The Modal -->
 <div id="id02" class="modal">
 <span onclick="document.getElementById('id02').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content">
+  <form class="modal-content" action="submit.php" method="POST">
     <div class="imgcontainer"> <!-- imgcontainer -->
       <img src="pic/IMG_0243.jpeg" alt="Avatar" class="center" style="width: 40%;
   border-radius: 50%;
@@ -342,7 +344,8 @@ class="close" title="Close Modal">&times;</span>
       <span class="psw">Forgot <a href="#" style="color: red;">password?</a></span>
     </div>
   </form>
-</div></main>
+</div>
+</main>
  
 <!-- toggle sidebar function -->   
 <script>
