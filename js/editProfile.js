@@ -1,5 +1,8 @@
 
-document.getElementById('editBtn').addEventListener('click', function() {
+document.getElementById('editBtn')
+(function() {
+    // Code to run immediately
+  //.addEventListener('click', function() {
     document.getElementById('username').disabled = false;
     document.getElementById('age').disabled = false;
     document.getElementById('career').disabled = false;
@@ -9,7 +12,8 @@ document.getElementById('editBtn').addEventListener('click', function() {
     document.getElementById('webaddress').disabled = false;
     this.style.display = 'none';
     document.getElementById('saveBtn').style.display = 'inline';
-});
+//}); 
+})();
 
 document.getElementById('saveBtn').addEventListener('click', function() {
     document.getElementById('username').style.color = '#FFFFFF'.disabled = true;
