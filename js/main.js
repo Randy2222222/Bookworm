@@ -10,3 +10,9 @@
 })();
 
 document.getElementById('saveBtn').addEventListener('click', function() {
+document.getElementById('post').style.color = '#FFFFFF'.disabled = true;
+    document.getElementById('author').style.color = '#FFFFFF'.disabled = true;
+    document.getElementById('image').disabled = true;
+    this.style.display = 'none';
+    document.getElementById('editBtn').style.display = 'inline';
+});
