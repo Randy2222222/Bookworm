@@ -131,7 +131,7 @@
     <button id="saveBtn" style="display: inline; background-color: gold; color: black; margin-right: 15px; float: right;">Save Link</button>
 
        <div class="container" style="margin top: 15px;">
-          <textarea id="autoresizing" value="post" style="background-color: black;" disabled></textarea>
+          <textarea id="autoresizing" value="post" style="background-color: black; color: ghostwhite;" disabled></textarea>
        </div>
        <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid; background-color: black; font-size: 1em;" disabled>
     <input type="file"
@@ -141,7 +141,19 @@
          style="margin: 12px; border-radius: 20px;
          border: 3px solid ivory; width: 93.333%; height: auto; align: center;">
         <button type="submit" style="background-color: black; color: white; display: block; margin: 5px auto 0px auto;  border: 2px solid white; padding: 5px 8px 5px 8px; font-size: 1.0em; border-radius: 5px;">Upload Image</button>
-       
+       <img id="preview" style="margin: 12px; border-radius: 20px;
+         border: 3px solid ivory; width: 93.333%; height: auto; align: center;"> <!-- change display: none; -->
+
+<script>
+document.getElementById('img').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const img = document.getElementById('preview');
+  img.src = URL.createObjectURL(file);
+  img.style.display = 'block';
+});
+</script>
     
     
     
