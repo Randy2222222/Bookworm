@@ -82,6 +82,11 @@
   margin-right: auto;
   width: 50%;
 }
+  .container {
+  display: flex;
+  justify-content: center;  /* only used for vertical alignment to center it */
+  align-items: center;
+}
 </style>
 </head>
      <body>
@@ -107,9 +112,11 @@
        
 
        <h1>📚 Bookworm 📚</h1>
-  
-          <textarea id="post" value="post" style="display: flex; align-items: center; font-size: 1em; padding: 10px;
-    background-color: black; color: ghostwhite; margin-top: 15px;" disabled>Post</textarea>
+
+
+       <div class="container" style="display: flex; align-items: center; font-size: 1em; padding: 10px;
+    background-color: black; color: ghostwhite; margin-top: 15px;">
+          <textarea id="post" value="post" disabled>Post</textarea>
        <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid; font-size: 1em;" disabled>
     <input type="file"
          name="image"
