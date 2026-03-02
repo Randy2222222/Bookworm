@@ -83,20 +83,11 @@
   width: 50%;
 }
   
-  .auto-resize-textarea {
-  /* Mimic textarea appearance */
-  width: 100%; /* Full-width, adjust as needed */
-/*  min-height: 60px; /* Starting height (like 3-4 lines of text) */
-  padding: 10px;/* Comfortable padding */
-/*  border: 3px solid ivory; /* Subtle border */
-/*  border-radius: 10px; /* Rounded corners */
-/*  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* System font stack */
-  font-size: 1em; /* Readable text size */
- /* line-height: 1.5; /* Natural line spacing */
-  color: gold; /* Dark text for readability */
-/*  box-sizing: border-box; /* Include padding/border in total width/height */
- /* resize: none; /* Prevent manual resizing (optional) */
-}
+   #autoresizing {
+            display: block;
+            overflow: hidden;
+            resize: none;
+        }
 </style>
 </head>
      <body>
@@ -131,11 +122,8 @@
     <button id="editBtn" style="display: inline; background-color: gold; color: black; margin-right: 15px; float: right;">Link</button>
     <button id="saveBtn" style="display: inline; background-color: gold; color: black; margin-right: 15px; float: right;">Save</button>
 
-       <div class="auto-resize-textarea" 
-         contenteditable="true" 
-         role="textbox" 
-         aria-multiline="true">
-          <textarea id="post" value="post" style="background-color: black;" disabled></textarea>
+       
+          <textarea id="autoresizing" value="post" style="background-color: black;" disabled></textarea>
        </div>
        <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid; background-color: black; font-size: 1em;" disabled>
     <input type="file"
@@ -152,8 +140,16 @@
 
 
      </main>
-   
-  
+       
+   <script type="text/javascript">
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+    </script>
 
 <!-- toggle sidebar function -->   
 <script>
