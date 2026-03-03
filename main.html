@@ -83,10 +83,11 @@
   width: 50%;
 }
   .editor {
-  border: 1px solid #ccc;
+  color: ghostwhite;
+  border: 2px solid gold;
   padding: 8px;
   min-height: 120px;
-  border-radius: 4px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 1em;
   overflow-y: auto;
@@ -94,7 +95,7 @@
 
 .editor:empty:before {
   content: attr(placeholder);
-  color: #999;
+  color: black;
 }
 </style>
 </head>
@@ -132,7 +133,7 @@
        class="editor"
        placeholder="Type your message..."></div>
   <input type="hidden" name="message" id="hiddenMessage">
-       <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid;">
+       <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; background-color: black; color: mediumorchid;">
     <input type="file"
          name="image"
          id="img"
