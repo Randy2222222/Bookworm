@@ -82,20 +82,20 @@
   margin-right: auto;
   width: 50%;
 }
-  .container {
-  margin-top: 15px;
-  display: flex;
-  justify-content: left; 
-  align-items: left;
-  width: 100vw;
-  height: auto;
+  .editor {
+  border: 1px solid #ccc;
+  padding: 8px;
+  min-height: 120px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  overflow-y: auto;
 }
-  
-   #autoresizing {
-            display: block;
-            overflow: hidden;
-            resize: none;
-        }
+
+.editor:empty:before {
+  content: attr(placeholder);
+  color: #999;
+}
 </style>
 </head>
      <body>
@@ -125,22 +125,23 @@
        <span><p style="text-align: center; margin: 10px auto 0px auto; font-size: 1em;
         color: gold; background-color: black; font-weight: 800;">Post: Review & Image, Links to Authors, etc. Click Poster's Image too go to their Page!</p></span>
        <span><hr style="width: 100%; color: gold; margin-top: 10px;"></span>
-<button id="editBtn" style="display: inline; background-color: gold; color: black; float: left; margin-left: 15px;">Edit Review</button>
-<button id="saveBtn" style="display: inline; background-color: gold; color: black; float: left; margin-left: 15px;">Save Review</button>
-    <button id="editBtn" style="display: inline; background-color: gold; color: black; margin-right: 15px; float: right;">Post Link</button>
-    <button id="saveBtn" style="display: inline; background-color: gold; color: black; margin-right: 15px; float: right;">Save Link</button>
 
-       <div class="container" style="margin top: 15px;">
-          <textarea id="autoresizing" value="post" style="background-color: black; color: ghostwhite;" disabled></textarea>
-       </div>
-       <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid; background-color: black; font-size: 1em;" disabled>
+       <form method="post">
+  <div id="editor"
+       contenteditable="true"
+       class="editor"
+       placeholder="Type your message..."></div>
+  <input type="hidden" name="message" id="hiddenMessage">
+       <input type="url" id="author" value="http://www.321gold.com/" style="display: inline; color: mediumorchid;">
     <input type="file"
          name="image"
          id="img"
          accept="image/*"
          style="margin: 12px; border-radius: 20px;
          border: 3px solid ivory; width: 93.333%; height: auto; align: center;">
-        <button type="submit" style="background-color: black; color: white; display: block; margin: 5px auto 0px auto;  border: 2px solid white; padding: 5px 8px 5px 8px; font-size: 1.0em; border-radius: 5px;">Upload Image</button>
+        <button type="submit" style="background-color: black; color: white; display: block; margin: 5px auto 0px auto;
+          border: 2px solid white; padding: 5px 8px 5px 8px; font-size: 1.0em; border-radius: 5px;">Upload Image</button>
+       </form>
        <img id="preview" style="margin: 12px; border-radius: 20px;
          border: 3px solid ivory; width: 93.333%; height: auto; align: center;"> <!-- change display: none; -->
 
@@ -160,17 +161,21 @@ document.getElementById('img').addEventListener('change', e => {
 
 
      </main>
-       
-   <script type="text/javascript">
-        textarea = document.querySelector("#autoresizing");
-        textarea.addEventListener('input', autoResize, false);
+       <script>
+   const editor = document.getElementById("editor");
 
-        function autoResize() {
-            this.style.height = 'auto';
-            this.style.height = this.scrollHeight + 'px';
-        }
-    </script>
+editor.addEventListener("blur", function () {
+  linkify(editor);
+});
 
+function linkify(el) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  el.innerHTML = el.innerHTML.replace(urlRegex, url => {
+    return `<a href="${url}" target="_blank">${url}</a>`;
+  });
+}
+       </script>
 <!-- toggle sidebar function -->   
 <script>
 function toggleSidebar() {
