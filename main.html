@@ -116,13 +116,6 @@
   font-size: 1em;
   overflow-y: auto;
 }
-  .fa fa-thumbs-up {
-    background-color: black;
-    color: gold;
-    margin: 10px 40px 10px auto;
-  }
-    
-
   /* like dislike thumb up or down */
   .fa {
   font-size: 40px;
@@ -171,13 +164,14 @@
          one "Bling Mouse" and was waiting to pounce on numbers two 
          and three.</p>
        </div>
-<!-- Use an element to toggle between a like/dislike icon -->
+   <span> <!--  Use an element to toggle between a like/dislike icon -->
+     <p style="color: skin; margin: 15px auto 15px 40px;">
    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-     <span> <script>
+     <script>
        function myFunction(x) {
   x.classList.toggle("fa-thumbs-down");
 }
-     </script></span>
+     </script></p></span>
        <form method="post">
   <div id="editor"
        contenteditable="true"
