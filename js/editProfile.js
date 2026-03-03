@@ -15,12 +15,12 @@
 })();
 
 document.getElementById('saveBtn').addEventListener('click', function() {
-    document.getElementById('username').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('age').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('career').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('hobbies').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('readingstyle').style.color = '#FFFFFF'.disabled = true;
-    document.getElementById('bio').style.color = '#FFFFFF'.disabled = true;
+    document.getElementById('username').style.color = 'gold'.disabled = true;
+    document.getElementById('age').style.color = 'gold'.disabled = true;
+    document.getElementById('career').style.color = 'gold'.disabled = true;
+    document.getElementById('hobbies').style.color = 'gold'.disabled = true;
+    document.getElementById('readingstyle').style.color = 'gold'.disabled = true;
+    document.getElementById('bio').style.color = 'gold'.disabled = true;
     document.getElementById('website').disabled = true;
     this.style.display = 'none';
     document.getElementById('editBtn').style.display = 'inline';
