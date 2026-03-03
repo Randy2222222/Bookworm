@@ -116,6 +116,16 @@
   font-family: inherit;
   font-size: 1em;
 }
+  /* like dislike thumb up or down */
+  .fa {
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+​
+.fa:hover {
+  color: gold;
+}
 </style>
 </head>
      <body>
@@ -194,21 +204,8 @@ document.getElementById('img').addEventListener('change', e => {
 
 
      </main>
-       <script>
-   const editor = document.getElementById("editor");
-
-editor.addEventListener("blur", function () {
-  linkify(editor);
-});
-
-function linkify(el) {
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
-
-  el.innerHTML = el.innerHTML.replace(urlRegex, url => {
-    return `<a href="${url}" target="_blank">${url}</a>`;
-  });
-}
-       </script>
+       
+       
 <!-- toggle sidebar function -->   
 <script>
 function toggleSidebar() {
