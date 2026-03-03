@@ -5,6 +5,8 @@
 <head>
   <link rel="icon" type="image/png" href="icon.png">  <!-- Favicon -->
   <link rel="apple-touch-icon" href="icon.png">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title></title>
@@ -152,7 +154,8 @@
          one "Bling Mouse" and was waiting to pounce on numbers two 
          and three.</p>
        </div>
-
+<!-- Use an element to toggle between a like/dislike icon -->
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
        <form method="post">
   <div id="editor"
        contenteditable="true"
@@ -181,8 +184,11 @@ document.getElementById('img').addEventListener('change', e => {
   img.src = URL.createObjectURL(file);
   img.style.display = 'block';
 });
-</script>
-    
+<script>
+       function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+     </script>
     
     
 
@@ -209,7 +215,7 @@ function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("active");
 }
 </script>
-
+<script src="js/linkify.js"></script>
 <script src="js/onimage.js"></script>
 <script src="js/author.js"></script>
   <footer></footer>
