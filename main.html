@@ -104,7 +104,6 @@
   background-color: black;
   color: ghostwhite;
   display: flex;
-  width: 350px;
   align-itmes: center;
   justify-contenr: center;
   text-align: left;
@@ -115,6 +114,7 @@
   border-radius: 10px;
   font-family: inherit;
   font-size: 1em;
+  overflow-y: auto;
 }
   /* like dislike thumb up or down */
   .fa {
@@ -165,7 +165,12 @@
          and three.</p>
        </div>
 <!-- Use an element to toggle between a like/dislike icon -->
-<span><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></span>
+   <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+     <span> <script>
+       function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+     </script></span>
        <form method="post">
   <div id="editor"
        contenteditable="true"
