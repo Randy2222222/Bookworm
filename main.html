@@ -168,12 +168,13 @@
    <span> <!--  Use an element to toggle between a like/dislike icon -->
      <p><span style="color: gold; margin: 10px auto -5px 10px;">
    <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="thumbsup"></i></span>
-     <span id="display" style="font-size: 1em; color: lime; margin: auto auto -5px 15px;">0</span> Likes
+     <span id="display" style="font-size: 1em; color: lime; margin: auto auto -5px 15px;">0</span> Likes</p>
      <script>
        function myFunction(x) {
   x.classList.toggle("fa-thumbs-down");
 }
-     </script></p></span>
+     </script></span>
+
        
         <a href="my_page.html" target="_self">
         <img src="pic/IMG_0216_jpg.jpeg" alt="pic" style="margin: 12px; 
@@ -215,7 +216,17 @@ document.getElementById('img').addEventListener('change', e => {
 }
      </script>
     
-    
+    <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("thumbs up");
+        let disp = document.getElementById("display");
+        
+        btn.addEventListener("click", function () {
+            count++;
+            disp.innerHTML = count;
+        });
+        
+    </script>
 
 
      </main>
