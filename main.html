@@ -12,7 +12,7 @@
 <title></title>
 
 <style>
-    html, body {
+        body {
       box-sizing: border-box;
       background-color: black;
       color: ghostwhite;
@@ -117,32 +117,7 @@
   font-size: 1em;
   overflow-y: auto;
 }
-  /* heart */
-  .large-font{
-  font-size:xxx-large;
-}
-.top-20{
-  position:relative;
-  top:20vh;
-}
-ion-icon.active{
-  animation:like 0.5s 1;
-  fill:red;
-  stroke:none;
-}
-ion-icon{
-  fill:transparent;
-  stroke:black;
-  stroke-width:30;
-  transition:all 0.5s;
-}
-
-
-@-webkit-keyframes like {
-  0%   { transform: scale(1); }
-  90%   { transform: scale(1.2); }
-  100% { transform: scale(1.1); }
-}
+  
   
 </style>
 </head>
@@ -184,23 +159,15 @@ ion-icon{
        </div>
     <!--  Use an element to toggle between a like/dislike icon -->
        <span>
-   <p style="margin: 0px auto auto 15px;"><button style="background-color: black; padding: 0px;">❤️</button><span id="heart" id="display">0</span> likes 
-     <button id="brokenheart" style="background-color: black; margin: 0px auto auto 15px; padding: 0px;">💔</button></p>
-         
-<script type="text/javascript">
-        let count = 0;
-        let btn = document.getElementById("heart");
-        let btn2=
-document.getElementById("brokenhearted");
-        let disp = document.getElementById("display");
-        
-        btn.addEventListener("click", function () {
-            count++;  
-        btn2.addEventListener("click",function (){
-           count—;
-            disp.innerHTML = count;
-        })});
-</script></span>
+      <p style="color: gold; margin: auto auto -10px 15px;"><span><i onclick="myFunction(this)" class="fa fa-thumbs-up" id="thumbsup"></i></span>
+     <span id="display" style="font-size: 1em; color: lime; margin: auto auto -10px 15px;">0</span> Likes</p>
+     
+       
+       <script>
+       function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+     </script></span>
                                                                                                                                                           
 
         <a href="my_page.html" target="_self">
@@ -264,5 +231,5 @@ function toggleSidebar() {
 <script src="js/onimage.js"></script>
 <script src="js/author.js"></script>
   <footer></footer>
-</body>
+     </body>
 </html>
