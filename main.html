@@ -168,7 +168,9 @@
    <span> <!--  Use an element to toggle between a like/dislike icon -->
      <p><span style="color: gold; margin: auto auto -10px 10px;">
    <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="thumbsup"></i></span>
-     <span id="display" style="font-size: 1em; color: lime; margin: auto auto -10px 15px;">0</span> Likes</p>
+     <span id="display" style="font-size: 1em; color: lime; margin: auto auto -10px 15px;">0</span> Likes <div id="clicks">0</div>
+<button class="heart" onclick="liked(this)">❤️</button></p>
+
 
      <script>
        function myFunction(x) {
@@ -224,7 +226,15 @@ document.getElementById('img').addEventListener('change', e => {
         
     </script>
 
+<script>
+function liked(heart) 
+  {
+  if (heart.classList.toggle('liked') )  click++;
+  else                                   click--;
 
+  document.getElementById('clicks').textContent = click;
+  } 
+</script>
      </main>
        
        
