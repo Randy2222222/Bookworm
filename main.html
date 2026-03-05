@@ -172,7 +172,19 @@
        <span style="color: gold; margin: auto 5px auto 0px;">
        <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="thumbsup"></i></span>
   <p>  <span id="display" style="font-size: 1em; color: lime; margin: auto auto -10px 15px;">0</span> Likes </p>
-    
+       <span>
+         <script>
+           
+(function() {
+
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+
+})();
+         </script>
+       </span>
+         
        
 <script>
        function myFunction(x) {
@@ -217,7 +229,18 @@ document.getElementById('img').addEventListener('change', e => {
   img.style.display = 'block';
 });
 </script>
-       
+       <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("thumbsup");
+        let disp = document.getElementById("display");
+        
+        btn.addEventListener("click", function () {
+            count++;
+            disp.innerHTML = count;
+        });
+        
+    </script>
+
     
 
 
