@@ -119,6 +119,7 @@
 }
   /* like dislike thumb up or down */
   .fa {
+  color: gold;
   font-size: 40px;
   cursor: pointer;
   user-select: none;
@@ -167,24 +168,24 @@
          and three?</p>
        </div>
     <!--  Use an element to toggle between a like/dislike icon -->
-    <p style="color: lime;><span><i onclick="toggleLike(this)" class="fa fa-thumbs-up"></i>
-<span id="display" style="font-size:1em; color:lime; margin:auto auto -10px 15px;">0</span> Likes</p>
-    
-     <script>
-let count = 0;
-function toggleLike(icon) {
-  let display = document.getElementById("display");
-  if (icon.classList.contains("fa-thumbs-up")) {
-      icon.classList.remove("fa-thumbs-up");
-      icon.classList.add("fa-thumbs-down");
-      count--;
-  } else {
-      icon.classList.remove("fa-thumbs-down");
-      icon.classList.add("fa-thumbs-up");
-      count++;
-  }
-  display.innerHTML = count;
-}
+    <p style="margin: 0ox auto 0px 15px;"><span><i class="fa fa-thumbs-up like-btn"></i>
+<span style="margin: auto auto 0px 15px; font-size: 1em;" class="like-count">0</span> Likes
+       <script>
+let buttons = document.querySelectorAll(".like-btn");
+buttons.forEach(function(btn){
+  btn.addEventListener("click", function(){
+    let countDisplay = btn.nextElementSibling;
+    let count = parseInt(countDisplay.innerHTML);
+    btn.classList.toggle("liked");
+    if(btn.classList.contains("liked")){
+        count++;
+    } else {
+        count--;
+    }
+    countDisplay.innerHTML = count;
+  });
+});
+
 </script>
       </span>
                                                                                                                                                           
@@ -224,32 +225,11 @@ document.getElementById('img').addEventListener('change', e => {
   img.style.display = 'block';
 });
 </script>
-       <script>
-       let liked = false;
-let count = 0;
-
-function toggleLike(x) {
-    let display = document.getElementById("display");
-
-    liked = !liked;
-
-    if (liked) {
-        x.classList.remove("fa-thumbs-down");
-        x.classList.add("fa-thumbs-up");
-        count++;
-    } else {
-        x.classList.remove("fa-thumbs-up");
-        x.classList.add("fa-thumbs-down");
-        count--;
-    }
-
-    display.innerHTML = count;
-}
-       </script>
+       
     
 
 
-     </main>
+     
        
        
 <!-- toggle sidebar function -->   
