@@ -183,16 +183,25 @@ ion-icon{
          and three?</p>
        </div>
     <!--  Use an element to toggle between a like/dislike icon -->
-     <div class='large-font text-center top-20'>
-  <ion-icon name="heart">
-    <div class='red-bg'>❤️</div>
-  </ion-icon>
-</div>
-       <span><script>let icon = document.querySelector('ion-icon');
-icon.onclick = function(){
-  icon.classList.toggle('active');
-}
+       <span>
+   <p style="margin: 0px auto auto 15px;"><button style="background-color: black; padding: 0px;">❤️</button><span id="heart" id="display">0</span> likes 
+     <button id="brokenheart" style="background-color: black; margin: 0px auto auto 15px; padding: 0px;">💔</button></p>
+         
+<script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("heart");
+        let btn2=
+document.getElementById("brokenhearted");
+        let disp = document.getElementById("display");
+        
+        btn.addEventListener("click", function () {
+            count++;  
+        btn2.addEventListener("click",function (){
+           count—;
+            disp.innerHTML = count;
+        })});
 </script></span>
+                                                                                                                                                          
 
         <a href="my_page.html" target="_self">
         <img src="pic/IMG_0216_jpg.jpeg" alt="pic" style="margin: 12px; 
