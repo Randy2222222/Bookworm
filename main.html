@@ -218,14 +218,13 @@ document.getElementById('img').addEventListener('change', e => {
 </script>
        <script type="text/javascript">
         let count = 0;
-        
+      
         let btn = document.getElementById("fa-thumbs-up");
         let disp = document.getElementById("display");
         
         btn.addEventListener("click", function () {
-          if document.getElementById("fa-thumbs-down"); {
-            count == count; }else{
-            count++; }
+          if document.getElementById("fa-thumbs-up"); {
+            count++; }else{ count--;}
             disp.innerHTML = count;
         });
         
