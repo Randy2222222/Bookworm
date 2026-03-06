@@ -168,17 +168,6 @@
          and three?</p>
        </div>
     <!--  Use an element to toggle between a like/dislike icon -->
-       <span>
-       <p style="color: gold; margin: auto 5px -10px auto;">
-     <span><i onclick="myFunction(this)" class="fa fa-thumbs-up" id="thumbsup"></i></span>
-       <span id="display" style="font-size: 1em;">0</span>Likes</p>
-         
-<script>
-       function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
-}
-     </script>
-      </span>
                                                                                                                                                           
 
         <a href="my_page.html" target="_self">
@@ -216,21 +205,7 @@ document.getElementById('img').addEventListener('change', e => {
   img.style.display = 'block';
 });
 </script>
-       <script type="text/javascript">
-        let count = 0;
-      
-        let btn = document.getElementById("thumbsup");
-        let disp = document.getElementById("display");
-        
-        btn.addEventListener("click", function () {
-           if (classList.contains("fa-thumbs-up")) {
-            count++; }else if{
-             (classList.contains("fa-thumbs-down")) 
-             count--; }
-            disp.innerHTML = count;
-        });
-        
-    </script>
+       
 
     
 
