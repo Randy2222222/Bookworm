@@ -272,7 +272,7 @@ span.psw {
   enctype="multipart/form-data">
     <div class="container">
       <div class="imgcontainer"> <!-- imgcontainer  add-->
-      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="center" style="width: 40%;
+      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar" style="width: 40%;
   border-radius: 50%;
   border: 3px solid gold;
   margin: 0px auto auto auto;"> </div> <!-- end imgage avatar was 5px
@@ -282,8 +282,8 @@ span.psw {
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="uname" style="text-algin: center;"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="username" style="text-algin: center;"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username" name="username" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
@@ -325,13 +325,13 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content" action="submit.php" method="POST">
     <div class="imgcontainer"> <!-- imgcontainer -->
-      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="center" style="width: 40%;
+      <img src="pic/IMG_0243.jpeg" alt="Avatar" class="avatar" style="width: 40%;
   border-radius: 50%;
   border: 3px solid gold;
   margin: 15px auto 25px auto;">
     
-      <label for="uname" style="text-algin: center;"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="username" style="text-algin: center;"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username" name="username" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
